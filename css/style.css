@@ -103,6 +103,7 @@ a {
   color: #757575;
   margin-right: 50px;
   transition: 0.4s;
+  display: flex;
 }
 
 .contacts-link:hover,
@@ -114,9 +115,24 @@ a {
   color: var(--accent-color);
 }
 
+/* SVG */
+.header-icon {
+  max-height: 16px;
+  max-width: 16px;
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+}
+
+.contacts-link:hover .header-icon,
+.contacts-link:focus .header-icon {
+  fill: var(--accent-color);
+}
+
 /* Герой с кнопкой */
 .section-hero {
   background-color: #2f303a;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bg-hero.jpg) center/cover no-repeat;
   text-align: center;
   padding: 200px 0;
 }
@@ -178,6 +194,21 @@ a {
   line-height: 1.71;
 }
 
+.features-list-item {
+  max-width: 270px;
+}
+
+/* SVG */
+
+.features-icon {
+  max-width: 70px;
+  max-height: 70px;
+  background-color: var(--background-team-color);
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
 /* Чем мы занимаемся (3 фото) */
 
 .section-business {
@@ -209,7 +240,7 @@ a {
 }
 
 .our-team-block {
-  padding: 30px 60px;
+  padding: 30px 32px;
   text-align: center;
 }
 .team-name {
@@ -217,6 +248,62 @@ a {
   font-size: 16px;
   line-height: 19px;
   color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+
+/* SVG */
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.social__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.social__link:hover {
+  background-color: var(--accent-color);
+}
+
+.social__item:hover .social__icon {
+  fill: var(--primary-white-color);
+}
+
+.social__icon {
+  fill: var(--primary-text-color);
+  transition: 0.4s;
+}
+
+/* Clients */
+
+.clients {
+  padding: 94px 0;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-icon {
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  transition: 0.4s;
+}
+
+.clients-icon:hover {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* FOOTER */
@@ -242,6 +329,20 @@ a {
   display: block;
   color: var(--footer-address-color);
   margin-bottom: 9px;
+}
+
+/* SVG */
+
+.icon-welcome {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+
+.icon-footer {
+  display: flex;
 }
 
 /* PORTFOLIO!!!! */
