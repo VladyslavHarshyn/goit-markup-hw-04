@@ -333,21 +333,40 @@ a {
 
 /* SVG */
 
-.icon-welcome {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+.social__icon--footer {
+  fill: var(--primary-white-color);
 }
 
-.icon-footer {
+.footer-socials {
+  max-width: 206px;
+}
+
+.footer__insider {
   display: flex;
+  align-items: baseline;
+}
+
+.footer-addresses {
+  margin-right: 70px;
+}
+
+.footer-social-text {
+  margin-bottom: 20px;
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.social__link--footer {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social__item--footer:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* PORTFOLIO!!!! */
 
-/* Buttons (кнопки ul flex, center), на картинки внизу (display flex, justify-content:space-between). Выставить паддинги и маржины  */
 .header {
   border-bottom: 1px solid #ececec;
 }
