@@ -183,7 +183,7 @@ a {
   display: flex;
   color: var(--title-text-color);
   font-weight: 700;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   text-transform: uppercase;
 }
 
@@ -380,7 +380,8 @@ a {
   padding: 94px 0;
 }
 
-.filter-button:hover {
+.filter-button:hover,
+.filter-button:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -429,4 +430,5 @@ a {
 .portfolio-item {
   margin-top: 30px;
   border: 1px solid rgba(238, 238, 238, 1);
+  max-width: 370px;
 }
